@@ -1,0 +1,119 @@
+
+main {
+padding: 0 3vh;
+  
+height: 100vh; 
+    
+}
+.menu-bar {
+    
+    display: grid;
+    grid-template-columns: 35% 35% 1fr;
+    align-items: center;
+}
+.friend {
+    grid-column: 1 /2;
+    font-size: 4.5vh;
+    font-weight: 500;
+}
+
+ul.addFriends {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    grid-column: 3 / 4;
+    justify-content: space-around;
+    
+}
+ul.addFriends>li {
+    
+}
+
+.kakaotalk-status {
+    height: 3vh;
+    width: 3vh; 
+}
+
+.my-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    border-bottom: solid;
+    border-color: rgb(221,221,221);
+}
+#Jorge {
+    border-radius: 35%;
+    width:10vh;
+}
+
+#Jorge-text {
+    padding-left: 1.5vh;
+    font-size: 3.2vh;
+    font-weight: 650;
+}
+
+
+.friends-number-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 2vh 1vh 2vh;
+}
+
+.friends-number {
+    font-size: 2vh;
+    color: rgb(102,102,102)
+}
+
+#chevron-down {
+    width: 2.5vh;
+}
+
+.avatar {
+    border-radius: 35%;
+    width: 9vh;
+    
+}
+.avatar-name {
+    padding-left:1.5vh;
+}
+
+.main-screen>p {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 3vh;
+    align-items: center;
+    padding-bottom: 2vh;
+}
+
+.menu-underbar {
+    position: fixed;
+    top: 65vh;
+    height: 35vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.nav {
+    
+}
+
+.menu-underbar-list {
+    width: 100vw;
+    grid-row: 3 /4 ;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(239,239,239);
+    
+}
+
+
+
+
