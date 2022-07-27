@@ -1,0 +1,39 @@
+#screenBlocker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("image/logo.png");
+    position: absolute;
+    background-color: yellow;
+    width: 100vw;
+    height: 100vh;
+    color: green;
+}
+
+.screenImage {
+    width: 100px;
+    padding-bottom: 3vh;
+}
+
+.chatBallon2::before {
+    border-top-color: yellow;
+}
+
+.chatBallon::before {
+    border-top-color: yellow;
+}
+
+#screen { z-index: -10;}
+@media screen and (max-width:500px) {
+    #screenBlocker {display: none; }
+
+    .chatBallon2::before {
+        border-top: 2.5vh solid white;
+    }
+    
+    .chatBallon::before {
+        border-top: 4.2vh solid white;
+    }
+}
+

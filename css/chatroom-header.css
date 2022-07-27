@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     min-width: fit-content;
+    background-color: rgb(174,192,206);
 }
 
 .main-time {
