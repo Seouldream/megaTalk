@@ -2,57 +2,100 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/header.css" />
-        <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/oversize.css" />
-        <title>메가 톡</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+        <title>메가톡</title>
+        <link rel="stylesheet" href="./assets/css/global.css">
+        <link rel="stylesheet" href="./assets/css/common.css">
+        <link rel="stylesheet" href="./assets/css/status-bar.css">
+        <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/user.css">
+        <link rel="stylesheet" href="./assets/css/friends.css">
+        <link rel="stylesheet" href="./assets/css/navigation.css">
+        <base href="mega-talk">
     </head>
     <body>
-<!----Header-->
-<div id="screenBlocker"><img class="screenImage" src="image/logo.png">스크린 크기를 줄여주세요</div> 
-        <header>
-            <div class="status-bar">
-                <span class="time"><strong>9:00</strong></span>
-                <ul class="status-list">
-                    <li ><img class="phone-status" src="image/cellular.png" alt=""></li>
-                    <li ><img class="phone-status" src="image/wifi.png" alt=""></li>
-                    <li id="battery"><img class="battery" src="image/battery.png" alt=""></li>
-                </ul>
-            </div>
-        </header>
-<!-----Header-->
+        <div id="no-mobile">
+            <div class="logo">메가 톡</div>
+            <p>스크린 크기를 줄여주세요</p>
+        </div>
         <main>
-            <div class="menu-bar">
-                <span class="friend">친구</span>
-                <ul class="addFriends">
-                    <li ><img class="kakaotalk-status" src="image/search.png" alt=""></li>
-                    <li><img class="kakaotalk-status" src="image/add-friend.png" alt=""></li>
-                    <li ><img class="kakaotalk-status" src="image/settings.png" alt=""></li>
+            <aside id="status-bar">
+                <time datetime="09:00">9:00</time>
+                <ul>
+                    <li class="cellular">셀룰러</li>
+                    <li class="wifi">와이파이</li>
+                    <li class="battery">배터리</li>
                 </ul>
-            </div>
-            <div class="my-profile">
-                <img id="Jorge" src="image/avatar.png" alt="">
-                <span id="Jorge-text">조지</span>
-            </div>
-            <div class="main-screen">
-                <div class="friends-number-box">
-                <span class="friends-number">친구 3</span>
-                <img id="chevron-down" src ="image/chevron-down.png" alt="">
-                </div>
-                <p><img class="avatar" src="image/avatar.png" alt=""><span class="avatar-name">앨리스</span></p>
-                <p><img class="avatar" src="image/avatar.png" alt=""><span class="avatar-name">체셔 캣</span></p>
-                <p><img class="avatar" src="image/avatar.png" alt=""><span class="avatar-name">페페</span></p>
-            </div>
-        </main>
-            <div class="menu-underbar">
-                    <ul class="menu-underbar-list">
-                        <li><a href=index.html><img class="underbar-image" src="image/user-fill.png" alt=""></a></li>
-                        <li><a href=friends-list.html><img class="underbar-image" src="image/chat-blank.png" alt=""></a></li>
-                        <li><img class="underbar-image" src="image/view-blank.png" alt=""></li>
-                        <li><img class="underbar-image" src="image/shopping-blank.png" alt=""></li>
-                        <li><img class="underbar-image" src="image/more-blank.png" alt=""></li>
+            </aside>
+            <header>
+                <h1>친구</h1>    
+                <nav>
+                    <ul>
+                        <li class="search">
+                            <a href="./">검색</a>
+                        </li>
+                        <li class="add-friend">
+                            <a href="./">친구 추가</a>
+                        </li>
+                        <li class="settings">
+                            <a href="./">설정</a>
+                        </li>
                     </ul>
-            </div>
-     </body>
-    </html>
-
+                </nav>                
+            </header>
+            <article id="users">
+                <section id="user">
+                    <a href="./">
+                        <div class="avatar">프로필 이미지</div>
+                        <p>조지</p>
+                    </a>
+                </section>
+                <section id="friends">
+                    <div class="title">
+                        <h2>친구 3</h2>
+                        <button class="button">v</button>    
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./">
+                                <img src="./assets/images/user.png" class="avatar" alt>
+                                <p>앨리스</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./">
+                                <img src="./assets/images/user.png" class="avatar" alt>
+                                <p>체셔 캣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./">
+                                <img src="./assets/images/user.png" class="avatar" alt>
+                                <p>페페</p>
+                            </a>    
+                        </li>
+                    </ul>
+                </section>
+            </article>                    
+            <nav id="navigation">
+                <ul>
+                    <li class="active">
+                        <a class="friend" href="./">친구</a>
+                    </li>
+                    <li>
+                        <a class="chatting" href="./chats.html">채팅</a>
+                    </li>
+                    <li>
+                        <a class="view" href="./">뷰</a>
+                    </li>
+                    <li>
+                        <a class="shopping" href="./">쇼핑</a>
+                    </li>
+                    <li>
+                        <a class="more" href="./">더보기</a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+    </body>
+</html>
